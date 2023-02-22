@@ -1,0 +1,123 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-mid: 20px;
+  --font-midder: 26px;
+  --font-small: 12px;
+  --font-big: 40px;
+}
+.dark {
+  --bg-background: rgb(28, 29, 31);
+  --text: rgb(224, 213, 213);
+  --accent: rgb(202, 86, 105);
+  --grey: rgb(61, 50, 50);
+}
+.light {
+  --bg-background: rgb(222, 222, 223);
+  --text: rgb(27, 27, 27);
+  --accent: rgb(202, 86, 105);
+  --grey: rgb(211, 175, 175);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.light_bold {
+  font-weight: 600;
+  opacity: 0.4;
+}
+body {
+  min-height: 100vh;
+  font-size: var(--font-mid);
+}
+
+.flex-1 {
+  display: flex;
+  gap: 0.5rem;
+}
+.container {
+  width: 60%;
+  margin-inline: auto;
+}
+.section {
+  padding-block: 4rem;
+  width: inherit;
+  /* margin-inline: auto; */
+}
+.section-2 {
+  padding-block: 2rem;
+  width: inherit;
+}
+.section-1 {
+  padding-bottom: 1rem;
+  width: inherit;
+  margin-inline: auto;
+}
+ul {
+  list-style: none;
+  margin-left: 2rem;
+}
+li {
+  list-style: none;
+  display: block;
+}
+ul li::before {
+  content: "\2022";
+  position: relative;
+  top: 1.5rem;
+  color: var(--accent);
+  font-weight: 900;
+  display: block;
+  width: 1rem;
+  margin-left: -1em;
+}
+h1 {
+  font-size: var(--font-midder);
+  line-height: 1.1;
+}
+
+.space-1 > * + * {
+  margin-top: 2rem;
+}
+.space-0 > * + * {
+  margin-top: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

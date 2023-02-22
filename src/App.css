@@ -1,0 +1,127 @@
+.App {
+  background: var(--bg-background);
+  color: var(--text);
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* audio button */
+.audio_button {
+  appearance: none;
+  border: none;
+  aspect-ratio: 1/1;
+  border-radius: 0;
+  border-radius: 50%;
+  background-color: #e899c6;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.audio_button:hover {
+  opacity: 1;
+  border: none;
+  transform: scale(1.1);
+}
+.theme_toggle {
+  appearance: none;
+  background: none;
+  opacity: 0.7;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  outline: none;
+}
+.theme_toggle:hover {
+  opacity: 1;
+  border: none;
+  border: 2px solid var(--accent);
+}
+
+/* input field */
+.input_section {
+  margin-inline: auto;
+}
+.word_input {
+  position: relative;
+}
+.word_input > input {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--grey);
+  color: (var(--text));
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  opacity: 0.7;
+  font-size: var(--font-mid);
+}
+.search_icon {
+  position: absolute;
+  right: 2rem;
+  top: 0.75rem;
+}
+
+/* defSection */
+.def_audio {
+  display: flex;
+  justify-content: space-between;
+}
+.word {
+  font-size: var(--font-big);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.phonetic {
+  color: var(--accent);
+}
+
+/* meanings */
+.title {
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+}
+.title::after {
+  content: " ";
+  position: absolute;
+  top: 5rem;
+  left: 8rem;
+  width: 85%;
+  display: inline-block;
+  height: 0.125rem;
+  color: var(--accent);
+  background-color: var(--accent);
+  opacity: 0.5;
+}
+
+.error_image {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  margin-inline: auto;
+}
+
+/* error component */
+.error_title {
+  text-align: center;
+}
+.error_content {
+  text-align: center;
+}
+
+/* theme */
+.theme {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+}
+
+.credit {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+.credit_name {
+  color: var(--accent);
+}
