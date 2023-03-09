@@ -11,9 +11,11 @@ The simple dictionary app is a user-friendly tool that allows users to quickly l
 
 <br/>
 
-![video](./public/dictionary_002.gif)
+![video](./public/dictionary_001.gif)
 
 ## <br/>
+
+---
 
 ## Tech Stack Used:
 

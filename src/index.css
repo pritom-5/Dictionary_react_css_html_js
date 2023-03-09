@@ -53,6 +53,7 @@ body {
 
 .flex-1 {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .container {
